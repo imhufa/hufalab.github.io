@@ -5,7 +5,7 @@ author:
   email: ""
   url: "https://imhufa.github.io"
 
-baseurl: ""
+baseurl: "https://imhufa.github.io/blog"
 
 source: .
 destination: ./lab/_site/_blog
@@ -35,5 +35,4 @@ year : "2024"
 remote_theme: tocttou/hacker-blog
 
 # jekyll serve options
-port: 8875 #local server port
-
+port: 8875
