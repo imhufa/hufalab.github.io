@@ -1,5 +1,6 @@
 _site/
 _edit/
+_backup/
 .jekyll-cache/
 .jekyll-metadeta/
 *.backup
