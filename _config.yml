@@ -1,0 +1,12 @@
+title: hufa's laboratory
+description: exercising the brain
+author:
+  name: "hufa"
+  email: ""
+  url: "https://imhufa.github.io"
+
+baseurl: "https://imhufa.github.com/_blog"
+
+source: .
+destination: ./lab/_site/_blog
+permalink: /:title
