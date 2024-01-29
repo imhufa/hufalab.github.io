@@ -3,12 +3,12 @@ description: exercising the brain
 author:
   name: "hufa"
   email: ""
-  url: "https://imhufa.github.io"
+  url: "https://hufalab.github.io"
 
-baseurl: "https://imhufa.github.io/blog"
+baseurl: "/blog"
 
 source: .
-destination: ./lab/_site/_blog
+destination: ./_site
 permalink: /:title
 paginate: 5
 paginate_path: /blog/page:num/
