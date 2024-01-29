@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>hufa's laboratory</title>
-	<link rel="stylesheet" href="/css/styles.css/">
-</head>
-	<body>
-	</body>
-</html>
+---
+layout: default
+---
+
+<ul>
+	{% for post in paginator.posts %}
+		<li>
+			<h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
+			<time datetime="{{ post.date | date_to_xmkschema }}">{{ post.date | date_to_string }}</time>
+			<p>{{ psot.content | strip_html | truncatewords:50 }}</p>
+		</li>
+	{% endfor %}
+</ul>
+
