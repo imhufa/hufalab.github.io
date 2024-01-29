@@ -5,8 +5,35 @@ author:
   email: ""
   url: "https://imhufa.github.io"
 
-baseurl: "https://imhufa.github.com/_blog"
+baseurl: ""
 
 source: .
 destination: ./lab/_site/_blog
 permalink: /:title
+paginate: 5
+paginate_path: /blog/page:num/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+future: true
+plugins:
+    - jekyll-seo-tag
+    - jekyll-paginate
+    - jekyll-sitemap
+
+# custom variables
+owner : "imhufa"
+year : "2024"
+
+# thank you
+remote_theme: tocttou/hacker-blog
+
+# jekyll serve options
+port: 8875 #local server port
+
